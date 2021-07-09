@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="../assets/css/nav.css">
+      <meta charset="utf-8">
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+      <title>Fitness Flyers- Over Weight Diet</title>
+      <meta content="" name="description">
+      <meta content="" name="keywords">
+    
+      <!-- Favicons -->
+      <link href="../assets/img/favicon.png" rel="icon">
+      <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Lato:400,300,700,900" rel="stylesheet">
+    
+      <!-- Vendor CSS Files -->
+      <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+      <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+      <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    
+      <!-- Template Main CSS File -->
+      <link href="../assets/css/style.css" rel="stylesheet">
+      <style>
+          body{
+        margin-top:20px;
+    }
+    /*
+    Blog post entries
+    */
+    
+    .entry-card {
+        -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+        -moz-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+    }
+    
+    .entry-content {
+        background-color: #fff;
+        padding: 36px 36px 36px 36px;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+    
+    .entry-content .entry-title a {
+        color: #333;
+    }
+    
+    .entry-content .entry-title a:hover {
+        color: #4782d3;
+    }
+    
+    .entry-content .entry-meta span {
+        font-size: 12px;
+    }
+    
+    .entry-title {
+        font-size: .95rem;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    
+    .entry-thumb {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+    
+    .entry-thumb img {
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+    
+    .entry-thumb .thumb-hover {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: rgba(71, 130, 211, 0.85);
+        display: block;
+        top: 50%;
+        left: 50%;
+        color: #fff;
+        font-size: 40px;
+        line-height: 100px;
+        border-radius: 50%;
+        margin-top: -50px;
+        margin-left: -50px;
+        text-align: center;
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        opacity: 0;
+        transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+    }
+    
+    .entry-thumb:hover .thumb-hover {
+        opacity: 1;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+    
+    .article-post {
+        border-bottom: 1px solid #eee;
+        padding-bottom: 70px;
+    }
+    
+    .article-post .post-thumb {
+        display: block;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .article-post .post-thumb .post-overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        transition: all .3s;
+        -webkit-transition: all .3s;
+        opacity: 0;
+    }
+    
+    .article-post .post-thumb .post-overlay span {
+        width: 100%;
+        display: block;
+        vertical-align:middle;
+        text-align: center;
+        transform: translateY(70%);
+        -webkit-transform: translateY(70%);
+        transition: all .3s;
+        -webkit-transition: all .3s;
+        height: 100%;
+        color: #fff;
+    }
+    
+    .article-post .post-thumb:hover .post-overlay {
+        opacity: 1;
+    }
+    
+    .article-post .post-thumb:hover .post-overlay span {
+        transform: translateY(50%);
+        -webkit-transform: translateY(50%);
+    }
+    
+    .post-content .post-title {
+        font-weight: 500;
+    }
+    
+    .post-meta {
+        padding-top: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .post-meta li:not(:last-child) {
+        margin-right: 10px;
+    }
+    
+    .post-meta li a {
+        color: #999;
+        font-size: 13px;
+    }
+    
+    .post-meta li a:hover {
+        color: #4782d3;
+    }
+    
+    .post-meta li i {
+        margin-right: 5px;
+    }
+    
+    .post-meta li:after {
+        margin-top: -5px;
+        content: "/";
+        margin-left: 10px;
+    }
+    
+    .post-meta li:last-child:after {
+        display: none;
+    }
+    
+    .post-masonry .masonry-title {
+        font-weight: 500;
+    }
+    
+    .post-content .fa {
+        color: #ddd;
+    }
+    
+    .post-content a h2 {
+        font-size: 1.5rem;
+        color: #333;
+        margin-bottom: 0px;
+    }
+    
+    .article-post .owl-carousel {
+        margin-bottom: 20px !important;
+    }
+    
+    .post-masonry h4 {
+        text-transform: capitalize;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .mb40 {
+        margin-bottom: 40px !important;
+    }
+    .mb30 {
+        margin-bottom: 30px !important;
+    }
+    .media-body h5 a {
+        color: #555;
+    }
+    
+    /*
+    Template sidebar
+    */
+    
+    
+      </style>
+    
+      
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        
+    </head>
+    
+    <body>
+    
+      <!-- ======= Header ======= -->
+      <header id="header"><!--header-start-->
+        <div class="contain">
+      
+          <div class="header_left">
+             <div class="logo me-auto">
+              <h1><img src="../assets/img/portfolio/logo2.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html"  style="color:black">Fitness Flyers</a></h1>
+             </div>
+          </div>
+          <div class="header_right">
+            <label for="menuTrigger" class="nav_ico"><i class="fa fa-bars"></i></label>
+            <input id="menuTrigger" type="checkbox" name="">
+            <nav class="main_nav">
+              <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../AboutuS.html">About Us</a></li>
+                <li><a href="#">Diets & WorkOuts</a>
+                  <i class="fa fa-caret-down"></i>
+                  <ul>
+                    <li><a href="#">Under Weight</a>
+                      <i class="fa fa-caret-down"></i>
+                      <ul>
+                        <li><a href="../Underweight.html">Diet</a></li>
+                        <li><a href="#">Articles</a></li>
+                        <li><a href="#">Videos</a></li>
+                      </ul>
+                    </li>
+                     <li><a href="#">Over Weight</a>
+                      <i class="fa fa-caret-down"></i>
+                      <ul>
+                        <li><a href="../Overweight.html">Diet</a></li>
+                        <li><a href="#">Articles</a></li>
+                        <li><a href="#">Videos</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Obesity</a>
+                      <i class="fa fa-caret-down"></i>
+                      <ul>
+                        <li><a href="#">Diet</a></li>
+                        <li><a href="#">Articles</a></li>
+                        <li><a href="#">Videos</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="../contactus.html">Contact Us</a></li>
+              </ul>
+            </nav>    
+          </div>
+          
+        </div>
+      </header><!-- End #header -->
+  <div class="container pb50 posts">
+      <div class="row">
+          <div class="col-md-9 mb40">
+              <article>
+                  <img src="./images/undwt_7.jpg" alt="" class="img-fluid mb30">
+                  <div class="post-content">
+                      <h3>Like red meat, salmon and oily fish are excellent sources of protein and important healthy fats.</h3>
+                      <ul class="post-meta list-inline">
+                          <li class="list-inline-item">
+                              <i class="fa fa-user-circle-o"></i> <a href="#">Under weight</a>
+                          </li>
+                          <li class="list-inline-item">
+                              <i class="fa fa-calendar-o"></i> <a href="#">8 July 2021</a>
+                          </li>
+                          <li class="list-inline-item">
+                              <i class="fa fa-tags"></i> <a href="#">Web Development</a>
+                          </li>
+                      </ul>
+                      <p style="margin-left:50px;margin-right:50px">
+                        Out of all the nutrients that salmon and oily fish provide, omega-3 fatty acids are among the most significant and well known.
+                        </p><br>
+                        <p style="margin-left:50px;margin-right:50px">
+                        They offer numerous benefits for your health and help fight disease.
+                        </p><br>
+                        <p style="margin-left:50px;margin-right:50px">
+                        Just one 6-ounce (170-gram) fillet of deboned wild sockeye salmon provides around 250 calories and 12 grams of healthy fats. The same serving packs 37 grams of high quality protein, helping you build muscle or gain weight.
+                        </p><br>
+                        <p style="margin-left:50px;margin-right:50px">
+                        You can prepare salmon in a variety of ways: steamed, sautéed, smoked, grilled, baked, or poached. You can also try smoked salmon or even eat raw salmon in sushi and sashimi.
+                        </p><br>
+                        <p style="margin-left:50px;margin-right:50px">
+                        Fresh or frozen salmon often has a slightly higher price tag, but canned salmon is a quick and inexpensive option. Almost all canned salmon is wild rather than farmed, giving it top marks for nutrition.
+                        </p><br>
+                        <p style="margin-left:50px;margin-right:50px"><b>
+                        <u>SUMMARY</u><br><br>
+                        <p style="margin-left:50px;margin-right:50px">
+                        Salmon and other oily fish are a great source of incredibly healthy omega-3 fats. They also provide high quality protein to help you build muscle.
+                        </p>
+                        </p>
+                        </h3>
+                        </h4>
+                  </div> 
+                </div>
+            </div>
+  </div>       
+ <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright &nbsp;&nbsp;&nbsp;<strong><span><img src="../assets/img/portfolio/logo2.jpg" style="height:30px">&nbsp;&nbsp;&nbsp;&nbsp;Fitness Flyers</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+       
+      </div>
+    </div>
+  </footer><!-- End #footer -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS F-->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
