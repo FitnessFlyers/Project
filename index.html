@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="./assets/css/nav.css">
+  <!--About us-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="all">
+
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Fitness FLyers- Home</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Lato:400,300,700,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="2-bmi.js"></script>
+
+  <style>
+  .team{
+      width: 100%;
+      display: flex;
+      margin: auto;
+      align-items: center;
+      height: 100vh;
+      background-color: #fff;
+      padding-bottom: 30px; ;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 90%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      align-items: center;
+    }
+
+    .slide-container {
+      padding: 11px 32px;
+    }
+
+    .slide-card {
+      background-color: #111;
+      box-shadow: 0 8px 30px -7px #000;
+      margin: 0 20px;
+      padding: 9px 33px;
+      border-radius: 20px;
+      border: 0;
+      cursor: grab;
+    }
+
+    .slide-card .slide-card-img-top {
+      max-width: 100px;
+      border-radius: 50%;
+      margin: 15px auto 0;
+      box-shadow: 0 8px 20px -4px #000;
+      width: 100px;
+      height: 100px;
+    }
+
+    .slide-card h5 {
+      color: #01b0f8;
+      font-size: 21px;
+      line-height: 1.3;
+    }
+
+    .slide-card h5 span {
+      font-size: 18px;
+      color: #fff;
+    }
+
+    .slide-card p {
+      font-size: 18px;
+      color: rgb(240, 222, 222);
+      padding-bottom: 15px;
+    }
+
+    .swiper-slide.swiper-slide-active {
+      transform: scale(1.2);
+    }
+
+    .autoplay {
+      position: absolute;
+      color: #000;
+      font: 100px/100% arial, sans-serif;
+      right: 15px;
+      text-decoration: none;
+      text-shadow: 0 1px 0 #fff;
+      top: 15px;
+      width: auto;
+      height: auto;
+      z-index: 999;
+      opacity: 0.4;
+      transition: opacity 0.1s ease-in, transform 0.1s ease-out;
+      animation: fade_close 3s ease-out;
+    }
+
+    @media (max-width: 800px) {
+      .slide-container {
+        padding: 0px 0px;
+      }
+
+      .swiper-slide {
+        width: 360px;
+      }
+    }
+    .aboutus{
+      padding-top: 180px;
+    }
+ 
+
+  </style>
+   
+</head>
+
+<body>
+
+ 
+  <!-- ======= Header ======= -->
+  <header id="header"><!--header-start-->
+    <div class="contain">
+  
+      <div class="header_left">
+         <div class="logo me-auto">
+          <h1><a href="index.html"  ><img src="assets/img/portfolio/logo2.jpg"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html"  style="color:black">Fitness Flyers</a></h1>
+         </div>
+      </div>
+      <div class="header_right">
+        <label for="menuTrigger" class="nav_ico"><i class="fa fa-bars"></i></label>
+        <input id="menuTrigger" type="checkbox" name="">
+        <nav class="main_nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="AboutuS.html">About Us</a></li>
+            <li><a href="#">Diets & WorkOuts</a>
+              <i class="fa fa-caret-down"></i>
+              <ul>
+                <li><a href="#">Under Weight</a>
+                  <i class="fa fa-caret-down"></i>
+                  <ul>
+                    <li><a href="./UnderWeight.html">Diet</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">Videos</a></li>
+                  </ul>
+                </li>
+                 <li><a href="#">Over Weight</a>
+                  <i class="fa fa-caret-down"></i>
+                  <ul>
+                    <li><a href="./Overweight.html">Diet</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">Videos</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Obesity</a>
+                  <i class="fa fa-caret-down"></i>
+                  <ul>
+                    <li><a href="#">Diet</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">Videos</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="contactus.html">Contact Us</a></li>
+          </ul>
+        </nav>    
+      </div>
+      
+    </div>
+  </header>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+<div class="hero-container">
+     <div class="container">
+	 
+     <h1 style="color:white;font-size:50px">Welcome to Fitness Flyers</h1>
+     <b> <h2 style="color:white;font-size:30px;font-variant:bold;">Dream to be fit </h2></b>
+
+<a href="bmi.html">	<input type="button" value="BMI Calculation" style="color:black;background-color:#89CFF0;" class="btn-get-started scrollto" data-toggle="popover" title="Click Here to Calculate Your BMI"></a>
+	 </div>
+  </section>
+  <div class="aboutus">
+    <center>
+      <h1>Created to make your dream to come true.</h1>
+      <p style="font-size: 18px;">Fitness Flyers - Dream to be fit</p>
+      <blockquote>
+        <p style="font-size: 22px;">We believe fitness should be accessible to everyone, everywhere, regardless of income level or access to a gym. That's why we offer some full-length workout videos, the most affordable and effective workout programs on the web, and helpful healthy foods, nutrition and fitness information prvoided with BMI Calculation. User can follow the diet, workouts based on the category he falls upon and get awared through the articles provided in our website.</p></center>
+      </blockquote>
+    </div>
+  <!--Our Team-->
+  <section class="team">
+  <div class="swiper-container">
+    <center><h1>Our Team</h1></center>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="slide-container">
+          <div class="slide-card text-center"><img class="slide-card-img-top" src="./assets/img/team/team-1.jpg" alt="">
+            <div class="slide-card-body">
+              <h5>Karri Dinesh<br />
+                <span> Front-End Developer</span>
+              </h5>
+              <p class="slide-card-text">“ Hi..I'm dinesh, a front end developer. I like listening &nbsp; to music. ” </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-container">
+          <div class="slide-card text-center"><img class="slide-card-img-top" src="./assets/img/team/team-2.jpg" alt="">
+            <div class="slide-card-body">
+              <h5>Rashmi Keerthi <br />
+                <span> Front-End Developer </span>
+              </h5>
+              <p class="slide-card-text">“ Hello I'm Rashmi, Working as a Front end developer. I would like to Listen music. ” </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-container">
+          <div class="slide-card text-center"><img class="slide-card-img-top" src="./assets/img/team/team-3.jpg" alt="">
+            <div class="slide-card-body">
+              <h5>Manasa Vakalapudi<br />
+                <span> Front-End Developer </span>
+              </h5>
+              <p class="slide-card-text">“ Hey! I'm Manasa, a front end developer.I like to &nbsp; play badminton. ” </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-container">
+          <div class="slide-card text-center"><img class="slide-card-img-top" src="./assets/img/team/team-4.jpg" alt="">
+            <div class="slide-card-body">
+              <h5>Ratna Bhavani<br />
+                <span> Front-End Developer </span>
+              </h5>
+              <p class="slide-card-text">“I'm Ratna, a Front-End Developer.I like to play shuttle ” </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+  <!--Team End-->
+</div>
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <ul class="faq-list">
+
+          <li>
+            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">What is BMI? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+             <h3> <p>
+                BMI is an acronym for Body Mass Index, and it is an indicator of the amount of fat which is stored in the human body.
+ It provides a measure of the appropriateness of your weight to your height, based on health issues which are known to arise as a result of having a BMI which is too low or too high.
+              </p></h3>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">How accurate is BMI? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+              <h3><p>
+In itself, BMI is entirely accurate, but the question probably relates to how accurate BMI is in classifying people as having either a healthy weight 
+or an unhealthy weight. When used for populations, BMI has been found to be very accurate in predicting the incidence of mortality 
+
+and morbidity due to specific medical conditions, and this is the use for which it was originally designed. It is less accurate in relation to individuals for the reason
+ that it does not directly measure body fat. While for many people BMI is a reliable indicator of healthy or unhealthy levels of body fat, for some it can give incorrect indications. These can include, for example, people who are either very tall or very short, or people who are heavily muscled.               
+		</p></h3>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">What is the difference between being overweight and being obese? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+            <h3>  <p>
+               Determining whether someone is overweight or obese is often determined by assessing a person's body mass index (BMI), which is a ratio between weight and height. If your BMI falls between 25 and 29.9, you are overweight. If your BMI is 30 or higher, you are considered obese.
+		  </p></h3>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Is a healthy weight the same for everyone? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+              <h3><p>
+               No. Different people can have different measurements of a healthy weight depending on whether they are male or female, short or tall. People’s healthy weight can also vary with their age, amount of lean muscle and ethnic background. 
+		 </p></h3>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Why should I try to be a healthy weight?
+ <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+             <h3> <p>
+        Being a healthy weight benefits your health and wellbeing in many ways. People who are a healthy weight generally live longer and have a lower risk of developing chronic diseases.
+
+If you are overweight, losing even a small amount of weight can improve your quality of life. Being a healthy weight can make you more mobile and energetic, improve your self-esteem and reduce your risk of depression. Children who are a healthy weight may be less likely to be bullied, to have poor self-esteem and to develop eating disorders.        
+	    </p></h3>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">How do I know which diet and physical activity products work? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+             <h3> <p>
+               Lots of diet and exercise products and programs make big promises about long-lasting weight loss and/or fitness. But before you rush out to try the latest one, ask yourself some questions about the promises being made. And remember: if it seems too good to be true, it probably is.
+		  </p></h3>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+  <!-- End Our Team Section -->
+   
+  </main><!-- End #main -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright &nbsp;&nbsp;&nbsp;<strong><span><img src="assets/img/portfolio/logo2.jpg" style="height:30px">&nbsp;&nbsp;&nbsp;&nbsp;Fitness Flyers</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+       
+      </div>
+    </div>
+  </footer><!-- End #footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center" style="color:#89CFF0"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+</script>
+<script>
+  const swiper = new Swiper('.swiper-container', {
+
+navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
+},
+
+autoplay:
+{
+  delay: 2000,
+},
+loop: true,
+
+// Default parameters
+slidesPerView: 1,
+spaceBetween: 10,
+centeredSlides: true,
+roundLengths: true,
+loop: true,
+loopAdditionalSlides: 30,
+breakpoints: {
+  320: {
+    slidesPerView: 1,
+    spaceBetween: 0
+  },
+  480: {
+    slidesPerView: 2,
+    spaceBetween: 0
+  },
+  640: {
+    slidesPerView: 3,
+    spaceBetween: 0
+  }
+}
+});
+
+
+
+</script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+      
+
+</body>
+
+</html>

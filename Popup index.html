@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="all">
+
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Fitness FLyers - Home</title>
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Lato:400,300,700,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  
+<style>
+$primary: #2A4870;
+$secondary: #1E73B5;
+$light: #33A8CC;
+$highlight: #9ECE92;
+$white: #D0D8DB;
+$dark: #6D7172;
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+$font: 'Open Sans', sans-serif;
+
+
+html {
+  min-height: 100%;
+  display: grid;
+}
+
+body {
+  display: grid;
+  background: $white;
+}
+
+.box {
+  margin: auto;
+  width: 100px;
+  height: 50px;
+}
+
+.share {
+  position: absolute;
+  width: 120px;
+  height: 50px;
+  border-radius: 30px;
+  outline: none;
+  border: 0;
+  background: $primary;
+  overflow: hidden;
+  transition: all .5s ease;
+  box-shadow: 3px 5px 10px rgba($primary, .5);
+}
+
+.scale {
+  transform: scale(1.1);
+  transition: all .5s ease;
+}
+
+.line, .line2, .line3 {
+  width: 13px;
+  height: 60px;
+  position: absolute;
+  transform: rotate(15deg);
+}
+
+.line {
+  right: 22px;
+  top: -5px;
+  background: $highlight;
+}
+
+.line2 {
+  right: 10px;
+  background: $light;
+}
+
+.line3 {
+  right: -3px;
+  background: $secondary;
+}
+
+.icon {
+  user-select: none;
+  position: absolute;
+  color: $white;
+  left: 15px;
+  top: 6px;
+  h1 {
+    font-family: $font;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: .9em;
+  }
+  .btn {
+    position: absolute;
+    right: -27px;
+    background: rgba($white, .9);
+    color: $primary;
+    top: 7px;
+    padding: 3px 7px;
+    border-radius: 50%;
+  }
+}
+
+.active {
+  z-index: -2;
+  margin-top: -10px;
+  margin-left: -60px;
+  position: absolute;
+  opacity: 0;
+  transition: all .7s ease;
+  li {
+    list-style-type: none;
+    width: 40px;
+    height: 40px;
+    color: $white;
+    border-radius: 50%;
+    background: $primary;
+    position: absolute;
+    box-shadow: 2px 2px 6px rgba($primary, .5);
+  }
+  i {
+    margin: 10px 10px 8px 9px;
+  }
+}
+
+.open {
+  position: absolute;
+  margin-left: -60px;
+  margin-top: 50px;
+  opacity: 1;
+}
+
+.fab {
+  padding-left: 5px;
+}
+
+.one {
+  left: 0;
+}
+
+.two {
+  left: 50px;
+}
+
+.three {
+  left: 100px;
+}
+
+.four {
+  left: 150px;
+}
+
+.five {
+  left: 200px;
+}
+
+#hide {
+  visibility: hidden;
+}
+
+
+
+</style>
+
+  
+   
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo me-auto">
+        <h1><img src="assets/img/portfolio/logo2.jpg">&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html"  style="color:black">Dream To Be Fit</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="AboutuS.html">About Us</a></li>
+          <li><a class="nav-link scrollto active" href="Dietplans.html">Diet and Workouts</a></li>
+          <li><a class="nav-link scrollto" href="contactus.html">Contact Us</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End #header -->
+
+
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+<div class="hero-container">
+     <div class="container">
+	 
+     <h1>Welcome to Dream To Fit</h1>
+      <h2>We are here for your health </h2>
+      
+	  <input type="button" value="BMI Calculation" style="color:black;background-color:#89CFF0;" class="btn-get-started scrollto" data-toggle="popover" title="Click Here to Calculate Your BMI"
+	  onclick="window.open('https://www.quackit.com/javascript/examples/sample_popup.cfm','popUpWindow','height=500,width=400,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');">
+
+    </div>
+  </section><!-- #hero -->
+          <!-- ======= Our Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Fitness</li>
+              <li data-filter=".filter-card">Calories</li>
+              <li data-filter=".filter-web">Diet</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/image1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h3><a href="assets/img/portfolio/Portfolio-1" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1">Fitness 1</a></h3>
+                <div>
+                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
+                  <a href="https://time.com/4474874/exercise-fitness-workouts/" target="_blank" title="Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/image2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h3><a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3">Diet 1</a></h3>
+                <div>
+                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
+                  <a href="https://www.medicalnewstoday.com/articles/153998" target="_blank" title="Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/image4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h3><a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2">Fitness 2</a></h3>
+                <div>
+                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bi bi-plus"></i></a>
+                  <a href="https://www.helpguide.org/articles/healthy-living/the-mental-health-benefits-of-exercise.htm" target=_blank" title="Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/image5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h3><a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2">Calories 1</a></h3>
+                <div>
+                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
+                  <a href="https://www.medicalnewstoday.com/articles/263028" target="_blank" title="Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/image6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h3><a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2">Diet 2</a></h3>
+                <div>
+                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bi bi-plus"></i></a>
+                  <a href="https://www.medicalnewstoday.com/articles/322268" target="_blank" title="Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/image7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h3><a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3">Fitness 3</a></h3>
+                <div>
+                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bi bi-plus"></i></a>
+                  <a href="https://www.everydayhealth.com/fitness/all-articles/" target=_blank" title="Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/image8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h3><a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1">Calories 2</a></h3>
+                <div>
+                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bi bi-plus"></i></a>
+                  <a href="https://www.statpearls.com/ArticleLibrary/viewarticle/18786" target="_blank" title="Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/image9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h3><a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3">Calories 3</a></h3>
+                <div>
+                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bi bi-plus"></i></a>
+                  <a href="https://my.clevelandclinic.org/health/articles/4182-fat-and-calories" target="_blank" title="Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/image10.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h3><a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 1">Diet 3</a></h3>
+                <div>
+                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 1"><i class="bi bi-plus"></i></a>
+                  <a href="https://www.everydayhealth.com/diet-nutrition/all-articles/" target="_blank" title="Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Our Portfolio Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <ul class="faq-list">
+
+          <li>
+            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">What is BMI? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+             <h3> <p>
+                BMI is an acronym for Body Mass Index, and it is an indicator of the amount of fat which is stored in the human body.
+ It provides a measure of the appropriateness of your weight to your height, based on health issues which are known to arise as a result of having a BMI which is too low or too high.
+              </p></h3>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">How accurate is BMI? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+              <h3><p>
+In itself, BMI is entirely accurate, but the question probably relates to how accurate BMI is in classifying people as having either a healthy weight 
+or an unhealthy weight. When used for populations, BMI has been found to be very accurate in predicting the incidence of mortality 
+
+and morbidity due to specific medical conditions, and this is the use for which it was originally designed. It is less accurate in relation to individuals for the reason
+ that it does not directly measure body fat. While for many people BMI is a reliable indicator of healthy or unhealthy levels of body fat, for some it can give incorrect indications. These can include, for example, people who are either very tall or very short, or people who are heavily muscled.               
+		</p></h3>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">What is the difference between being overweight and being obese? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+            <h3>  <p>
+               Determining whether someone is overweight or obese is often determined by assessing a person's body mass index (BMI), which is a ratio between weight and height. If your BMI falls between 25 and 29.9, you are overweight. If your BMI is 30 or higher, you are considered obese.
+		  </p></h3>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Is a healthy weight the same for everyone? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+              <h3><p>
+               No. Different people can have different measurements of a healthy weight depending on whether they are male or female, short or tall. People’s healthy weight can also vary with their age, amount of lean muscle and ethnic background. 
+		 </p></h3>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Why should I try to be a healthy weight?
+ <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+             <h3> <p>
+        Being a healthy weight benefits your health and wellbeing in many ways. People who are a healthy weight generally live longer and have a lower risk of developing chronic diseases.
+
+If you are overweight, losing even a small amount of weight can improve your quality of life. Being a healthy weight can make you more mobile and energetic, improve your self-esteem and reduce your risk of depression. Children who are a healthy weight may be less likely to be bullied, to have poor self-esteem and to develop eating disorders.        
+	    </p></h3>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">How do I know which diet and physical activity products work? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+             <h3> <p>
+               Lots of diet and exercise products and programs make big promises about long-lasting weight loss and/or fitness. But before you rush out to try the latest one, ask yourself some questions about the promises being made. And remember: if it seems too good to be true, it probably is.
+		  </p></h3>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Our Team Section ======= 
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Our Team</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="member">
+              <img src="assets/img/team/team-1.jpg" alt="">
+              <h4>Walter White</h4>
+              <span>Chief Executive Officer</span>
+              <p>
+                Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
+              </p>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member">
+              <img src="assets/img/team/team-2.jpg" alt="">
+              <h4>Sarah Jhinson</h4>
+              <span>Product Manager</span>
+              <p>
+                Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
+              </p>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member">
+              <img src="assets/img/team/team-3.jpg" alt="">
+              <h4>William Anderson</h4>
+              <span>CTO</span>
+              <p>
+                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
+              </p>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Our Team Section -->
+    <!-- ======= Contact Us Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container">
+
+        <div class="section-title">
+		 <div class="row">
+		<div class="contact-about">
+          <h2>Contact Us</h2>
+          <p>For any Queries reach us..</p>
+        </div>
+		</div>
+		</div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="contact-about">
+              <h3>Dream To Be Fit</h3>
+              <p>A Unique way of Fitness Webiste</p>
+			  <div class="box"> 
+  <div class="share">
+    <div class="line3"></div>
+    <div class="line2"></div>
+    <div class="line"></div>
+    <div class="icon">
+      <h1>share</h1>
+      <div class="btn">+</div>
+    </div>
+    
+  </div>
+    <div id="hide" class="active">
+      <ul>
+        <li class="one el"><i class="fab fa-twitter"></i></li>
+        <li class="two el"><i class="fab fa-facebook"></i></li>
+        <li class="three el"><i class="fab fa-instagram"></i></li>
+        <li class="four el"><i class="fab fa-youtube"></i></li>
+        <li class="five el"><i class="fab fa-google-plus-g"></i></li>
+      </ul>
+    </div>
+</div>
+              <div class="social-links">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info">
+              <div>
+                <i class="bi bi-geo-alt"></i>
+                <p>Vijayawada<br>Krishna Dt,India 520001</p>
+              </div>
+
+              <div>
+                <i class="bi bi-envelope"></i>
+                <p>FitnessFlyers04@gmail.com</p>
+              </div>
+
+              <div>
+                <i class="bi bi-phone"></i>
+                <p>+91 0866 2437263</p>
+              </div>
+
+            </div>
+          </div>
+
+         <!-- <div class="col-lg-5 col-md-12">
+            <form>
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group mt-3">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+               <!-- <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message" id="third" style="display:hide">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center" id="toggle"><button type="submit">Send Message</button></div>-->
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Us Section -->
+
+    <!-- ======= Map Section ======= 
+	<script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+    <section class="map">
+      <iframe src="https://www.google.com/maps/place/Vijayawada,+Andhra+Pradesh/@16.5101619,80.6098647,13z/data=!3m1!4b1!4m5!3m4!1s0x3a35eff9482d944b:0x939b7e84ab4a0265!8m2!3d16.5061743!4d80.6480153" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <iframe
+  width="600"
+  height="450"
+  style="border:0"
+  loading="lazy"
+  allowfullscreen
+  src="https://www.google.com/maps/embed/v1/place?key=API_KEY
+    &q=Space+Needle,Seattle+WA">
+</iframe>
+	</section><!-- End Map Section -->
+
+  </main><!-- End #main -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Fitness Flyers</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+       
+      </div>
+    </div>
+  </footer><!-- End #footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center" style="color:#89CFF0"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+        <script async
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+</script>
+<script>
+
+$('.share').on('click', function(){
+  $(this).toggleClass('scale');
+  $('div#hide').removeAttr('id');
+  $('.active').toggleClass('open');
+});
+
+// let open = anime({
+//   targets: '.el',
+//   translateY: 250,
+//   direction: 'alternate',
+//   delay: function(el, i, l) {
+//     return i * 100;
+//   }
+// });
+</script>
+     
+
+</body>
+
+</html>
