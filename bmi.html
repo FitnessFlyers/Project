@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" href="./assets/css/nav.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Fitness FLyers - BMI Page</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="./assets/img/favicon.png" rel="icon">
+  <link href="./assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Lato:400,300,700,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="./assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="./assets/css/style.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="./2-bmi.js"></script>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header"><!--header-start-->
+    <div class="contain">
+  
+      <div class="header_left">
+         <div class="logo me-auto">
+          <h1><a href="index.html"  ><img src="./assets/img/portfolio/logo2.jpg"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html"  style="color:black">Fitness Flyers</a></h1>
+         </div>
+      </div>
+      <div class="header_right">
+        <label for="menuTrigger" class="nav_ico"><i class="fa fa-bars"></i></label>
+        <input id="menuTrigger" type="checkbox" name="">
+        <nav class="main_nav">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./Aboutus.html">About Us</a></li>
+            <li><a href="#">Diets & WorkOuts</a>
+              <i class="fa fa-caret-down"></i>
+              <ul>
+                <li><a href="#">Under Weight</a>
+                  <i class="fa fa-caret-down"></i>
+                  <ul>
+                    <li><a href="./UnderWeight.html">Diets</a></li>
+                    <li><a href="./U_Workouts.html">WorkOuts</a></li>
+                  </ul>
+                </li>
+                 <li><a href="#">Over Weight</a>
+                  <i class="fa fa-caret-down"></i>
+                  <ul>
+                    <li><a href="./Overweight.html">Diets</a></li>
+                    <li><a href="./O_Workouts.html">WorkOuts</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Obesity</a>
+                  <i class="fa fa-caret-down"></i>
+                  <ul>
+                    <li><a href="./Obesity.html">Diets</a></li>
+                    <li><a href="./Obes_Workouts.html">WorkOuts</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="contactus.html">Contact Us</a></li>
+          </ul>
+        </nav>    
+      </div>
+    </div>
+  </header>
+  <!-- End #header -->
+  <br>br><br><br>
+<div class="container">
+
+  <div class="section-title">
+    <center><h2 style="background-color:#89CFF0;color:white;font-size:50px">BMI Calculation</h2></center>
+  </div>
+<img src="./assets/img/bmi.png" align="right" style="margin-top: 35px;">
+<form name="bmiForm" style="margin-top: 40px;">
+<b style="font-size: 30px;">Your Weight(kg): <input type="text" name="weight" size="10"  ><br /></b><br>
+<b style="font-size: 30px;">Your Height(cm): <input type="text" name="height" size="10"><br /></b>
+<input type="button" value="Calculate BMI" onClick="calculateBmi();hidebutton()" style="font-size: 30px;display:inline;background-color:#89CFF0;color:white;margin-top:15px;margin-left:35px;border:1px solid #000;">
+<input type="reset" value="Reset" style="display:inline;background-color:#89CFF0;color:white;border:1px solid #000;font-size: 30px;"/><br><br><br>
+<b style="font-size: 30px;">Your BMI:</b> <input type="text" name="bmi" size="10" style="width:190px;font-size: 30px;" readonly><br><br>
+<b style="font-size: 30px;">Category:</b> <input type="text" name="meaning" size="25" id="category" style=" width:190px;font-size: 30px;" readonly>
+</form><br>
+<a href="./Bmi_UW.html" target="_blank"><button  id="myButton" class="float-left submit-button" style="font-size: 30px;background-color:#89CFF0;color:white;border:1px solid #000;">UnderWeight</button></a>
+<a href="./Bmi_OW.html" target="_blank"><button id="myButton" class="float-left submit-button" style="font-size: 30px;background-color:#89CFF0;color:white;border:1px solid #000;">Overweight</button></a>
+<a href="./Bmi_Obesity.html" target="_blank"><button id="myButton" class="float-left submit-button" style="font-size: 30px;background-color:#89CFF0;color:white;border:1px solid #000;">Obesity</button></a>
+</div>
+
+<!------------------------------------------------------ Redirect script starts here ----------------------------------------------------->
+
+<script type="text/javascript">
+// document. getElementById("myButton"). onclick = function () 
+// {
+// var cat=document.getElementById("category").value;
+// if(cat == "Under Weight")
+// {
+// location. href = "Bmi_UW.html";
+// }
+// else if (cat == "Over Weight")
+// {
+// location. href = "Bmi_OW.html";
+// }
+// else{
+//   location.href = "Bmi_Obesity.html";
+// };
+</script>
+  <!-------------------------------------------------  Redirect script ends here------------------------------------------------------------------------------------>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+
+<br><br><br><br><br><br><br><br><br><br>
+<!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright &nbsp;&nbsp;&nbsp;<strong><span><img src="assets/img/portfolio/logo2.jpg" style="height:30px">&nbsp;&nbsp;&nbsp;&nbsp;Fitness Flyers</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+       
+      </div>
+    </div>
+  </footer><!-- End #footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center" style="color:#89CFF0"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="./assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="./assets/vendor/php-email-form/validate.js"></script>
+  <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="./assets/js/main.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+
+<script language="JavaScript">
+
+function hidebutton()
+{
+$("myButton".hide());
+}
+function calculateBmi() {
+
+    $("#nextbutton").show();
+var weight = document.bmiForm.weight.value
+var height = document.bmiForm.height.value
+if(weight > 0 && height > 0){	
+var finalBmi = weight/(height/100*height/100)
+document.bmiForm.bmi.value = finalBmi
+if(finalBmi < 18.5){
+document.bmiForm.meaning.value = "Under Weight"
+}
+if(finalBmi > 18.5 && finalBmi < 25){
+document.bmiForm.meaning.value = "Normal Weight"
+}
+if(finalBmi > 25 && finalBmi < 30){
+document.bmiForm.meaning.value = "Over Weight"
+}
+else if(finalBmi >40)
+{
+document.bmiForm.meaning.value = "Obese"
+}
+}
+
+
+}
+</script>
+
+<!-- Script for View workouts and diets -->
+
+</body>
+</html>
