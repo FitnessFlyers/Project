@@ -101,16 +101,11 @@
   .main_nav ul ul li i{
     transform: rotate(-90deg);
   }
-  .main_nav ul ul li:hover i{ color: #fff; }
-  `````````````````````````````````````
-  
-  
-  
+.main_nav ul ul li:hover i{ color: #fff; } 
   /*This Media Query use for iPad Portrait View*/
   @media only screen and (min-width:768px) and (max-width:991px){
     .main_nav ul li{ margin: 0 ; font-size: 16px; }
     .main_nav ul li a{ padding: 5px 10px; }
-  
   }
   
   @media screen and (min-width: 768px){
@@ -125,7 +120,6 @@
       z-index: 10;
       color: #000000!important;
       font-size: 36px;
-  
     } 
     .main_nav {
       position: fixed;
@@ -188,7 +182,7 @@
     #menuTrigger:checked + .main_nav{
       transform: translateX(0%);
     }
-  
-    
-  
+  .logo-title{
+      display:none;
   }
+}
