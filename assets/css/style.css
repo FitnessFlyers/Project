@@ -105,6 +105,9 @@ section {
   font-weight: 700;
   letter-spacing: 1px;
 }
+.header-left me-auto h1 img a{
+  font-family: 'Arima Madurai', cursive;
+}
 
 #header .logo h1 a, #header .logo h1 a:hover {
   color: black;
