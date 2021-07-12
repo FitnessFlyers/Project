@@ -124,7 +124,7 @@
       display: block;
       position: relative;
       z-index: 10;
-      color: #000000;
+      color: #000000!important;
       font-size: 36px;
   
     } 
