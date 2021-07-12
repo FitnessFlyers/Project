@@ -48,6 +48,7 @@
     text-decoration: none;
     padding: 5px 15px;
     transition: all 0.3s ease-out;
+    font-family: 'Arima Madurai', cursive;
   }
   .main_nav ul li:hover > a{
     color: #2b3236;
