@@ -110,9 +110,9 @@
 				</div>
         <br>
 				<div class="form-group">
-				  <label class="control-label col-sm-2" for="phone"><b style="color:red;size:5px">*</b><b>Phone Number&nbsp;:</b></label>
+				  <label class="control-label col-sm-2" for="phone"><b style="color:red;size:5px">* </b><b>Phone Number&nbsp;:</b></label>
 				  <div class="col-sm-10">          
-					<input type="text" class="form-control" id="phone" name="phone" pattern="[6789][0-9]{9}" placeholder="Enter Your Contact Number" onselect="myFunction2()" title="Please enter 10 digit valid phone number starts with 6/7/8/9 " name="lname" required>
+					<input type="text" class="form-control" id="phone" name="phone" placeholder="Enter Your Contact Number" title="Please enter 10 digit valid phone number starts with 6/7/8/9 " name="lname" required>
 				  </div>
           <br>
 				</div>
@@ -188,16 +188,6 @@ function myFunction2() {
     alert("You have entered an invalid email address!");
 	var z = document.getElementById("email").autofocus;
     return (false);
-  var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-  if((phone.value.match(phoneno))
-        {
-      return true;
-        }
-      else
-        {
-        alert("Enter Valid Phone Number with 10 digits");
-        return false;
-        }
 }
 </script>
 	<br><br>
