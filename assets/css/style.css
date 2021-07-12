@@ -209,6 +209,9 @@ section {
     font-size: 28px;
     line-height: 36px;
   }
+ .header_left .logo h1 img a{
+  display:none;
+ }
  #hero{
   background-size: cover;
   position: absolute;
