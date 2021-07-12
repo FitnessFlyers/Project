@@ -289,7 +289,7 @@ section {
   left: 0;
   top: -2px;
 }
-.faq-list #faq1 p{
+.faq-list #faq1,#faq2,#faq3,#faq4,#faq5,#faq6{
 font-size:18px;
 }
 .faq .faq-list p {
