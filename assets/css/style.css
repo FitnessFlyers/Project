@@ -209,6 +209,12 @@ section {
     font-size: 28px;
     line-height: 36px;
   }
+ #hero{
+  background-size: cover;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+ }
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
