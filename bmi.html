@@ -35,8 +35,8 @@
 </head>
 <style>
    @media screen and (max-width: 767px){
-           .container .logo-img{
-            width:100%;
+           .container img{
+            width:93%;
            }
         }
 </style>
@@ -48,7 +48,7 @@
   
       <div class="header_left">
          <div class="logo me-auto">
-          <h1><a href="index.html"  ><img class="logo-img" src="./assets/img/portfolio/logo2.jpg"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html"  style="color:black;font-family: 'Arima Madurai', cursive;">Fitness Flyers</a></h1>
+          <h1><a href="index.html"  ><img src="./assets/img/portfolio/logo2.jpg"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html"  style="color:black">Fitness Flyers</a></h1>
          </div>
       </div>
       <div class="header_right">
@@ -91,47 +91,75 @@
     </div>
   </header>
   <!-- End #header -->
-<section style="background-color:#f5f5f6;">
+  <br>br><br><br>
 <div class="container">
-          <br>
+
   <div class="section-title">
-    <center><h2 style="background-color:#89CFF0;color:white;font-size:50px;font-family: 'Arima Madurai', cursive;">BMI Calculation</h2></center>
+    <center><h2 style="background-color:#89CFF0;color:white;font-size:50px">BMI Calculation</h2></center>
   </div>
 <img src="./assets/img/bmi.png" align="right" style="margin-top: 35px;">
-<form name="bmiForm" style="margin-top: 40px;font-family: 'Arima Madurai', cursive;">
+<form name="bmiForm" style="margin-top: 40px;">
 <b style="font-size: 30px;">Your Weight(kg): <input type="text" name="weight" size="10"  ><br /></b><br>
 <b style="font-size: 30px;">Your Height(cm): <input type="text" name="height" size="10"><br /></b>
 <input type="button" value="Calculate BMI" onClick="calculateBmi();hidebutton()" style="font-size: 30px;display:inline;background-color:#89CFF0;color:white;margin-top:15px;margin-left:35px;border:1px solid #000;">
 <input type="reset" value="Reset" style="display:inline;background-color:#89CFF0;color:white;border:1px solid #000;font-size: 30px;"/><br><br><br>
-<b style="font-size: 30px;">Your BMI:</b> <input type="text" name="bmi" size="10" style="width:190px;font-size: 30px;" readonly><br><br>
-<b style="font-size: 30px;">Category:</b> <input type="text" name="meaning" size="25" id="category" style=" width:190px;font-size: 30px;" readonly>
+<b style="font-size: 30px;">Your BMI:</b> <input type="text" name="bmi" size="10" style="width:220px;font-size: 30px;" readonly><br><br>
+<b style="font-size: 30px;">Category:</b> <input type="text" name="meaning" size="25" id="category" style=" width:220px;font-size: 30px;" readonly>
 </form><br>
-<a href="./Bmi_UW.html" target="_blank"><button  id="myButton" class="float-left submit-button" style="font-size: 30px;background-color:#89CFF0;color:white;border:1px solid #000;font-family: 'Arima Madurai', cursive;">UnderWeight</button></a>
-<a href="./Bmi_OW.html" target="_blank"><button id="myButton" class="float-left submit-button" style="font-size: 30px;background-color:#89CFF0;color:white;border:1px solid #000;font-family: 'Arima Madurai', cursive;">Overweight</button></a>
-<a href="./Bmi_Obesity.html" target="_blank"><button id="myButton" class="float-left submit-button" style="font-size: 30px;background-color:#89CFF0;color:white;border:1px solid #000;font-family: 'Arima Madurai', cursive;">Obesity</button></a>
+<button id="myButton" style="display:inline;background-color:#89CFF0;color:white;border:1px solid #000;font-size: 20px;">Click here for Diets</button>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button id="myButton1" style="display:inline;background-color:#89CFF0;color:white;border:1px solid #000;font-size: 20px;" >Click here for Workouts</button>
 </div>
-</section>
-<!------------------------------------------------------ Redirect script starts here ----------------------------------------------------->
+
+<!------------------------------------------------------ Diet Redirect script starts here ----------------------------------------------------->
 
 <script type="text/javascript">
-// document. getElementById("myButton"). onclick = function () 
-// {
-// var cat=document.getElementById("category").value;
-// if(cat == "Under Weight")
-// {
-// location. href = "Bmi_UW.html";
-// }
-// else if (cat == "Over Weight")
-// {
-// location. href = "Bmi_OW.html";
-// }
-// else{
-//   location.href = "Bmi_Obesity.html";
-// };
-</script>
-  <!-------------------------------------------------  Redirect script ends here------------------------------------------------------------------------------------>
+document. getElementById("myButton"). onclick = function () 
+{
+var cat=document.getElementById("category").value;
+if(cat == "Under Weight")
+{
+location. href = "Bmi_UW.html";
+
+}
+else if(cat == "Over Weight")
+{
+location. href = "Bmi_OW.html";
+}
+else if(cat == "Obese")
+{
+location. href = "Bmi_Obesity.html";
+}
+};
+</script>  <!-------------------------------------------------  Redirect script ends here------------------------------------------------------------------------------------>
+<!------------------------------------------------------ Workouts Redirect script starts here ----------------------------------------------------->
+
+<script type="text/javascript">
+document. getElementById("myButton1"). onclick = function () 
+{
+var cat=document.getElementById("category").value;
+if(cat == "Under Weight")
+{
+location. href = "U_Workouts.html";
+
+}
+else if(cat == "Over Weight")
+{
+location. href = "O_Workouts.html";
+}
+else if(cat == "Obese")
+{
+location. href = "Obes_Workouts.html";
+}
+};
+</script>  <!-------------------------------------------------  Redirect script ends here------------------------------------------------------------------------------------>
+
+
+
+
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
+
+<br><br><br><br><br><br><br><br><br><br>
 <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
