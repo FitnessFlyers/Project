@@ -196,8 +196,9 @@
     .header_left .logo h1 img a{
             display:none;
     }
-    
-    
-    
-    
+}
+@media screen and (max-width: 767px){
+    .header_left .logo h1 img a{
+            display:none;
+    }
 }
