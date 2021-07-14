@@ -193,7 +193,9 @@
         height:430px;
     }
     
-    
+    .header_left .logo h1 img a{
+            display:none;
+    }
     
     
     
