@@ -38,6 +38,11 @@
 
 </head>
 <style>
+        main {
+  background-image: url("assets/img/dumbell.jpg");
+  background-repeat: no-repeat;
+  background-size:contain;
+}
    @media screen and (max-width: 767px){
            .container img{
             width:93%;
@@ -102,15 +107,22 @@
     </div>
   </header>
   <!-- End #header -->
-        <section style="background-color:#f5f5f6;font-family: 'Arima Madurai', cursive;"
-  <br>br><br><br>
-<div class="container">
+        <main id="main">
 
-  <div class="section-title">
-    <center><h2 style="background-color:#89CFF0;color:white;font-size:50px">BMI Calculation</h2></center>
-  </div>
-     <img src="./assets/img/bmi.png" align="right" style="margin-top: 35px;">
-<!--         <table class="table table-hover" style="margin-top: 35px;">
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+<center><h2 style="background-color:#89CFF0;color:white;font-size:50px">BMI Calculation</h2></center>
+  
+        <!-- <div class="section-title">
+          <center><b><h2 style="color:#000000;font-size:50px">About Us</h2></b></center>
+        </div> -->
+
+        <div class="row">
+		
+          <div class="col-lg-6 order-1 order-lg-2">
+		  <br><br>
+            <table class="table table-hover" style="font-size:26px;width:50%">
   <thead style="background-color:#89CFF0">
     <tr style="font-weight:bold">
       <th>Categories</th>
@@ -144,20 +156,31 @@
       </tr>            
   </tbody>
 </table>
- -->
-<form name="bmiForm" style="margin-top: 40px;">
-<b style="font-size: 30px;">Your Weight(kg): <input type="text" name="weight" size="10"  ><br /></b><br>
-<b style="font-size: 30px;">Your Height(cm): <input type="text" name="height" size="10"><br /></b>
-<input type="button" value="Calculate BMI" onClick="calculateBmi();hidebutton()" style="font-size: 30px;display:inline;background-color:#89CFF0;color:white;margin-top:15px;margin-left:35px;border:1px solid #000;">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
+            <form name="bmiForm" style="margin-top: 40px;font-size:20px;;color:#000">
+<b style="font-size: 30px">Your Weight(kg): </strong><input type="text" name="weight" size="10" placeholder="Enter Weight"  ><br /></b><br>
+<b style="font-size: 30px;">Your Height(cm): <input type="text" name="height" size="10" placeholder="Enter Height"><br /></b>
+<input type="button" value="Calculate BMI" onClick="calculateBmi();hidebutton()" style="font-size: 30px;display:inline;background-color:#89CFF0;color:white;margin-top:15px;margin-left:15px;border:1px solid #000;">
 <input type="reset" value="Reset" style="display:inline;background-color:#89CFF0;color:white;border:1px solid #000;font-size: 30px;"/><br><br><br>
 <b style="font-size: 30px;">Your BMI:</b> <input type="text" name="bmi" size="10" style="width:220px;font-size: 30px;" readonly><br><br>
 <b style="font-size: 30px;">Category:</b> <input type="text" name="meaning" size="25" id="category" style=" width:220px;font-size: 30px;" readonly>
 </form><br>
-<button id="myButton" style="display:inline;background-color:#89CFF0;color:white;border:1px solid #000;font-size: 20px;">Click here for Diets</button>
+<button id="myButton" style="display:inline;background-color:#89CFF0;color:white;border:1px solid #000;font-size: 20px;"  data-toggle="modal" 
+                data-target="#exampleModal">Click here for Diets</button>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button id="myButton1" style="display:inline;background-color:#89CFF0;color:white;border:1px solid #000;font-size: 20px;" >Click here for Workouts</button>
-</div>
 
-<!------------------------------------------------------ Diet Redirect script starts here ----------------------------------------------------->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <br>
+	<br>
+	<br>
+	<br>
+  <!------------------------------------------------------ Diet Redirect script starts here ----------------------------------------------------->
 
 <script type="text/javascript">
 document. getElementById("myButton"). onclick = function () 
@@ -176,8 +199,68 @@ else if(cat == "Obese")
 {
 location. href = "Bmi_Obesity.html";
 }
+else if(cat == "Normal Weight")
+{
+
+//var myPopup = window.open("assets/img/portfolio/1.jpg", "COngratulations", "width=450, height=225,toolbar=0,location=0, directories=0, status=0, menubar=0");
+
+}
 };
-</script>  <!-------------------------------------------------  Redirect script ends here------------------------------------------------------------------------------------>
+
+</script> 
+
+
+<!--Bootstrap modal -->
+        <div class="modal fade" 
+             id="exampleModal"
+             tabindex="-1" 
+             role="dialog"
+             aria-labelledby="exampleModalLabel" 
+             aria-hidden="true">
+            <div class="modal-dialog" 
+                 role="document">
+                <div class="modal-content">
+                    <!-- Modal heading -->
+                    <div class="modal-header">
+                        <h5 class="modal-title" 
+                            id="exampleModalLabel" style="color:#000;font-size:30px">
+                         <b> Hurray... Great ! You are in Normal Weight.Follow Our Website for Healthy Diets and Workouts.</b>
+                      </h5>
+                        <button type="button" 
+                                class="close"
+                                data-dismiss="modal" 
+                                aria-label="Close">
+                            <span aria-hidden="true" style="font-size:20px;font-weight:bold">
+                              x
+                          </span>
+                        </button>
+                    </div>
+  
+                    <!-- Modal body with image -->
+                    <div class="modal-body">
+                        <img src="./assets/img/popup.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        <script src=
+"https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+                integrity=
+"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+                crossorigin="anonymous"></script>
+        <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                integrity=
+"sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+                crossorigin="anonymous"></script>
+        <script src=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+                integrity=
+"sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+                crossorigin="anonymous"></script>
+
+ <!-------------------------------------------------  Redirect script ends here------------------------------------------------------------------------------------>
 <!------------------------------------------------------ Workouts Redirect script starts here ----------------------------------------------------->
 
 <script type="text/javascript">
@@ -186,16 +269,16 @@ document. getElementById("myButton1"). onclick = function ()
 var cat=document.getElementById("category").value;
 if(cat == "Under Weight")
 {
-location. href = "U_Workouts.html";
+location. href = "Bmi_UW.html#UW_Workouts";
 
 }
 else if(cat == "Over Weight")
 {
-location. href = "O_Workouts.html";
+location. href = "Bmi_OW.html#OW_WOrkouts";
 }
 else if(cat == "Obese")
 {
-location. href = "Obes_Workouts.html";
+location. href = "Bmi_Obesity.html#Ob_WOrkouts";
 }
 };
 </script>  <!-------------------------------------------------  Redirect script ends here------------------------------------------------------------------------------------>
@@ -268,6 +351,7 @@ document.bmiForm.meaning.value = "Obese"
 </script>
 
 <!-- Script for View workouts and diets -->
+</main>
 
 </body>
 </html>
