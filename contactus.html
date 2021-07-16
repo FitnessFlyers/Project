@@ -35,6 +35,20 @@
 			display:none;
 			}
 		}
+		body {
+  background-image: url("./assets/img/contactus.jpg");
+  background-repeat: no-repeat;
+  background-size:contain;
+}
+input {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: white;
+}
+input:focus {
+  border-color: transparent;
+}
+
 	</style>
   
 </head>
@@ -89,16 +103,17 @@
       </div>
     </div>
   </header><!-- End #header --> 
-  <main id="main" style="background-color:#f5f5f6;font-family: 'Arima Madurai', cursive;margin-top:40px">
-<div class="container contact" width="70%">
-	  <br><br>
-	 <b><center><h2 style="background-color:#89CFF0;color:white;font-size:50px;font-family: 'Arima Madurai', cursive;">Contact Us</h2></center></b>
+  <main id="main" style="font-family: 'Arima Madurai', cursive;margin-top:40px">
+<hr style="background-color:#89CFF0"><br>  
+  <main id="main" style="font-family: 'Arima Madurai', cursive;">
+<div class="container contact" width="70%">	
+<b><h2 style="color:#89CFF0;font-size:40px;font-weight:bold">Contact Us</h2></b>
 <section width="23%" style="float: right;">
-  <aside style="width: 60vh;height:60vh;padding-left: 15px;margin-left: 15px;float: right;font-family: 'Arima Madurai', cursive;background-color: #f5f5f6;">
+  <aside style="width: 60vh;height:60vh;padding-left: 15px;margin-left: 75px;float: right;font-family: 'Arima Madurai', cursive;margin-right:0px;color:#fff;font-weight:bold">
     <h3>If You Have any Queries <br> Feel Free to Contact Us</h3><br><br>
-    <img src="https://img.icons8.com/ios-glyphs/30/000000/phone-disconnected.png"/>+ 91 6302536043<br><br>
-    <img src="https://img.icons8.com/wired/34/000000/email.png"/>&nbsp;Fitnessflyers04@gmail.com<br><br>
-    <img src="https://img.icons8.com/material-rounded/30/000000/next-location.png"/>Andhra Pradesh<br><br>
+    <i class="fa fa-phone" style="color:#fff;font-weight:bold"/></i>&nbsp;+ 91 6302536043<br><br>
+    <i class="fa fa-envelope" style="color:#fff;font-weight:bold"/></i>&nbsp;Fitnessflyers04@gmail.com<br><br>
+    <i class="fa fa-map-marker" style="color:#fff;font-weight:bold"/></i> &nbsp;Andhra Pradesh<br><br>
 
   </aside>
 </section>	
@@ -107,35 +122,35 @@
 			<div class="contact-form">
 				<div id="message" class="alert alert-danger alert-dismissible fade"></div>
 				<div class="form-group">				  
-				  <label class="control-label col-sm-2" for="fname"><b style="color:red;size:5px;" align="left">*</b><b>Name</b>&nbsp;&nbsp;:</label>
+				  <label class="control-label col-sm-2" for="fname" ><b  align="left" style="color:red;font-size:20px;font-weight:bold">*</b><b style="color:red;size:5px;color:#fff;font-size:20px;font-weight:bold">Name</b>&nbsp;&nbsp;:</label>
 				  <div class="col-sm-10">          
-					<input type="text" class="form-control"id="fname" placeholder="Enter Your Name" name="fname" onselect="myFunction2()" required autofocus>
+					<input type="text" class="form-control"id="fname" placeholder="Enter Your Name"  style="border-width: 0 0 2px;border-color:white;background-color:transparent;width:500px;color:#fff" name="fname" onselect="myFunction2()" required autofocus>
 				  </div>
 				</div>
         <br>
 				<div class="form-group">
-				  <label class="control-label col-sm-2" for="phone"><b style="color:red;size:5px"></b><b>Phone Number&nbsp;:</b></label>
+				  <label class="control-label col-sm-2" for="phone"><b style="color:red;size:5px;font-size:20px;font-weight:bold"> </b><b style="size:5px;color:#fff;font-size:20px;font-weight:bold">Phone Number&nbsp;:</b></label>
 				  <div class="col-sm-10">          
-					<input type="text" class="form-control" id="phone" name="phone" placeholder="Enter Your Contact Number" title="Please enter 10 digit valid phone number starts with 6/7/8/9 " name="lname" required>
+					<input type="text" class="form-control" id="phone" name="phone" placeholder="Enter Your Contact Number" style="border-width: 0 0 2px;border-color:white;background-color:transparent;width:500px;color:#fff" title="Please enter 10 digit valid phone number starts with 6/7/8/9 " name="lname" required>
 				  </div>
           <br>
 				</div>
 				<div class="form-group">
-				  <label class="control-label col-sm-2" for="email"><b style="color:red;size:5px">*</b><b>Email</b>&nbsp;&nbsp;:</label>
+				  <label class="control-label col-sm-2" for="email"><b style="color:red;size:5px;font-size:20px;font-weight:bold">*</b><b style="size:5px;color:#fff;font-size:20px;font-weight:bold">Email</b>&nbsp;&nbsp;&nbsp;&nbsp;:</label>
 				  <div class="col-sm-10">
-					<input type="email" class="form-control" id="email" name="email" placeholder="Enter Email Id" name="email" onselect="myFunction2()" required>
+					<input type="email" class="form-control" id="email" name="email" placeholder="Enter Email Id" style="border-width: 0 0 2px;border-color:white;background-color:transparent;width:500px;color:#fff" name="email" onselect="myFunction2()" required>
 				  </div>
 				</div>
         <br>
 				<div class="form-group">
-				  <label class="control-label col-sm-2" for="comment"><b style="color:red;size:5px">*</b><b>Message</b>&nbsp;&nbsp;:</label>
+				  <label class="control-label col-sm-2" for="comment"><b style="color:red;size:5px;font-size:20px;font-weight:bold">*</b><b style="size:5px;color:#fff;font-size:20px;font-weight:bold">Message</b>&nbsp;&nbsp;:</label>
 				  <div class="col-sm-10">
-					<textarea class="form-control" rows="5" name="comment" id="comment" placeholder="Write your query here............." required></textarea>
+					<textarea class="form-control" rows="5" name="comment" id="comment" placeholder="Write your query here............." style="border-width: 2px 2px 2px;border-color:white;background-color:transparent;width:500px;color:#fff" required></textarea>
 				  </div>
 				</div>
 				<div class="form-group">        
 				  <div class="col-sm-offset-2 col-sm-10">
-					<center><button class="btn btn-default" value="Set Focus" onclick="myFunction()" style="background-color:#abe1fa; color:#000;margin-top: 10px;box-shadow: 3px 6px 10px 0.3px">Submit</button></center>
+					<center><button class="btn btn-default" value="Set Focus" onclick="myFunction()" style=" color:#fff;margin-top: 10px;box-shadow: 3px 6px 10px 0.3px">Submit</button></center>
 				  </div>
 				</div>
 			</div>
@@ -195,7 +210,6 @@ function myFunction2() {
     return (false);
 }
 </script>
-	<br><br>
 	<!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
