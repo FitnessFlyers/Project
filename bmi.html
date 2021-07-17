@@ -168,8 +168,8 @@
 <p style="font-size: 30px;">Your BMI:&nbsp;<input type="text" name="bmi" size="10" style="width:220px;font-size: 30px;" readonly></p>
 <p style="font-size: 30px;">Category:&nbsp;<input type="text" name="meaning" size="25" id="category" style=" width:220px;font-size: 30px;" readonly></p>
 </form><br>
-<button id="myButton" style=" background-color: #89CFF0;border: none;color: white;padding: 15px 32px;text-align: center;text-decoration: none;font-size: 20px;margin: 4px 2px;cursor: pointer;"  data-toggle="modal" 
-                data-target="#exampleModal">Click here for Diets & WorkOuts</button>
+<button id="myButton" style=" background-color: #89CFF0;border: none;color: white;padding: 15px 32px;text-align: center;text-decoration: none;font-size: 20px;margin: 4px 2px;cursor: pointer;"  >Click here for Diets & WorkOuts</button>
+ 
           </div>
         </div>
 
@@ -183,7 +183,8 @@
   <!------------------------------------------------------ Diet Redirect script starts here ----------------------------------------------------->
 
 <script type="text/javascript">
-document. getElementById("myButton"). onclick = function () 
+var diet = document. getElementById("myButton");
+diet.onclick = function () 
 {
 var cat=document.getElementById("category").value;
 if(cat == "Under Weight")
@@ -202,7 +203,8 @@ location. href = "Bmi_Obesity.html";
 else if(cat == "Normal Weight")
 {
 
-//var myPopup = window.open("assets/img/portfolio/1.jpg", "COngratulations", "width=450, height=225,toolbar=0,location=0, directories=0, status=0, menubar=0");
+diet.innerHTML=`<button style=" background-color: #89CFF0;border: none;color: white;text-align: center;text-decoration: none;cursor: pointer;" id="myButton" data-toggle="modal"   data-target="#exampleModal">Click here for Diets & WorkOuts</button> `
+
 
 }
 };
@@ -263,25 +265,6 @@ else if(cat == "Normal Weight")
  <!-------------------------------------------------  Redirect script ends here------------------------------------------------------------------------------------>
 <!------------------------------------------------------ Workouts Redirect script starts here ----------------------------------------------------->
 
-<script type="text/javascript">
-document. getElementById("myButton1"). onclick = function () 
-{
-var cat=document.getElementById("category").value;
-if(cat == "Under Weight")
-{
-location. href = "Bmi_UW.html#UW_Workouts";
-
-}
-else if(cat == "Over Weight")
-{
-location. href = "Bmi_OW.html#OW_WOrkouts";
-}
-else if(cat == "Obese")
-{
-location. href = "Bmi_Obesity.html#Ob_WOrkouts";
-}
-};
-</script>  <!-------------------------------------------------  Redirect script ends here------------------------------------------------------------------------------------>
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <!-- ======= Footer ======= -->
