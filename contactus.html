@@ -38,17 +38,21 @@
 			  background-image: url('./assets/img/contactus.jpeg');
  			  background-repeat: no-repeat;
  			  background-size:cover;
-			}	
-       		}
+			}
+			input[type=text],input[type=email],textarea{
+        			width: 90%;
+   			   }
+       			}
 main{
   background-image: url('./assets/img/contactus.jpeg');
   background-repeat: no-repeat;
   background-size:cover;
 }
-input {
+input[type=text],input[type=email],textarea {
   outline: 0;
   border-width: 0 0 2px;
   border-color: white;
+  width: 100%;
 }
 input:focus {
   border-color: transparent;
@@ -121,35 +125,35 @@ input:focus {
 
   </aside>
 </section>	
-		<div class="col-md-9">
+		<div class="col-md-9" style="width: 70%;">
 		 <form id="contact_form" name="myform2" action="https://formspree.io/f/moqynjqd" method="post" >
 			<div class="contact-form">
 				<div id="message" class="alert alert-danger alert-dismissible fade"></div>
 				<div class="form-group">				  
-				  <label class="control-label col-sm-2" for="fname" ><b  align="left" style="color:red;font-size:20px;font-weight:bold">*</b><b style="color:red;size:5px;color:#fff;font-size:20px;font-weight:bold">Name</b>&nbsp;&nbsp;:</label>
+				  <label class="control-label col-sm-2" for="fname" ><b  align="left" style="color:red;font-size:20px;font-weight:bold">*</b><b style="color:red;color:#fff;font-size:20px;font-weight:bold">Name</b>&nbsp;&nbsp;:</label>
 				  <div class="col-sm-10">          
-					<input type="text" class="form-control"id="fname" placeholder="Enter Your Name"  style="border-width: 0 0 2px;border-color:white;background-color:transparent;width:500px;color:#fff" name="fname" onselect="myFunction2()" required autofocus>
+					<input type="text" class="form-control"id="fname" placeholder="Enter Your Name"  style="border-width: 0 0 2px;border-color:white;background-color:transparent;color:#fff" name="fname" onselect="myFunction2()" required autofocus>
 				  </div>
 				</div>
         <br>
 				<div class="form-group">
-				  <label class="control-label col-sm-2" for="phone"><b style="size:5px;color:#fff;font-size:20px;">Phone Number&nbsp;:</b></label>
+				  <label class="control-label col-sm-2" for="phone"><b style="color:#fff;font-size:20px;">Phone Number&nbsp;:</b></label>
 				  <div class="col-sm-10">          
-					<input type="text" class="form-control" id="phone" name="phone" placeholder="Enter Your Contact Number" style="border-width: 0 0 2px;border-color:white;background-color:transparent;width:500px;color:#fff" title="Please enter 10 digit valid phone number starts with 6/7/8/9 " name="lname" required>
+					<input type="text" class="form-control" id="phone" name="phone" placeholder="Enter Your Contact Number" style="border-width: 0 0 2px;border-color:white;background-color:transparent;color:#fff" title="Please enter 10 digit valid phone number starts with 6/7/8/9 " name="lname" required>
 				  </div>
           <br>
 				</div>
 				<div class="form-group">
-				  <label class="control-label col-sm-2" for="email"><b style="color:red;size:5px;font-size:20px;font-weight:bold">*</b><b style="size:5px;color:#fff;font-size:20px;font-weight:bold">Email</b>&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+				  <label class="control-label col-sm-2" for="email"><b style="color:red;font-size:20px;font-weight:bold">*</b><b style="color:#fff;font-size:20px;font-weight:bold">Email</b>&nbsp;&nbsp;&nbsp;&nbsp;:</label>
 				  <div class="col-sm-10">
-					<input type="email" class="form-control" id="email" name="email" placeholder="Enter Email Id" style="border-width: 0 0 2px;border-color:white;background-color:transparent;width:500px;color:#fff" name="email" onselect="myFunction2()" required>
+					<input type="email" class="form-control" id="email" name="email" placeholder="Enter Email Id" style="border-width: 0 0 2px;border-color:white;background-color:transparent;color:#fff" name="email" onselect="myFunction2()" required>
 				  </div>
 				</div>
         <br>
 				<div class="form-group">
-				  <label class="control-label col-sm-2" for="comment"><b style="color:red;size:5px;font-size:20px;font-weight:bold">*</b><b style="size:5px;color:#fff;font-size:20px;font-weight:bold">Message</b>&nbsp;&nbsp;:</label>
+				  <label class="control-label col-sm-2" for="comment"><b style="color:red;font-size:20px;font-weight:bold">*</b><b style="color:#fff;font-size:20px;font-weight:bold">Message</b>&nbsp;&nbsp;:</label>
 				  <div class="col-sm-10">
-					<textarea class="form-control" rows="5" name="comment" id="comment" placeholder="Write your query here............." style="border-width: 2px 2px 2px;border-color:white;background-color:transparent;width:500px;color:#fff" required></textarea>
+					<textarea class="form-control" rows="5" name="comment" id="comment" placeholder="Write your query here............." style="border-width: 2px 2px 2px;border-color:white;background-color:transparent;color:#fff" required></textarea>
 				  </div>
 				</div>
 				<div class="form-group">        
